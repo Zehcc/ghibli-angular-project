@@ -1,0 +1,17 @@
+<ul>
+    <li class="listItem" *ngFor="let film of films">
+        <div class="filmImgContainer">
+            <img class="filmImg" [src]="film.image" alt="film.title">
+        </div>
+        <div class="filmTxt">
+            <h4>Título</h4>
+            <p>{{film.title}} ({{film.original_title}})</p>
+            <h4>Director</h4>
+            <p>{{film.director}}</p>
+            <h4>Duración</h4>
+            <p>{{film.running_time}}'</p>
+            <h4>Año</h4>
+            <p>{{film.release_date}}</p>
+        </div>
+    </li>
+</ul>

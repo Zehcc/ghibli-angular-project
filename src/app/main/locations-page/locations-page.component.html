@@ -1,0 +1,14 @@
+<ul>
+    <li class="locationItem" *ngFor="let location of locations">
+        <img *ngIf="location.terrain === 'River'" src="https://img.wattpad.com/8876b7f42291f1f441d9a309a42497c81f32a2a5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f324c53567a4f4365775272635a673d3d2d3837383039303630392e313639303366616237636532343731343239333430393031343734302e676966" alt="#">
+        <img *ngIf="location.terrain === 'Mountain'" src="https://64.media.tumblr.com/2928ec0294786ba7ec95b35422d9166a/tumblr_nqq11jkjpJ1u2bcamo1_500.gifv" alt="#">
+        <img *ngIf="location.terrain === 'Hill'" src="https://animesher.com/orig/1/163/1637/16374/animesher.com_beautiful-indie-pale-1637450.gif" alt="#">
+        <img *ngIf="location.terrain === 'Plain'" src="https://data.whicdn.com/images/291795277/original.gif" alt="#">
+        <img *ngIf="location.terrain === 'Marsh'" src="https://i.pinimg.com/originals/04/75/61/047561f8935462b22bbb12961d144217.gif" alt="#">
+        <img *ngIf="location.terrain === 'Forest'" src="https://i.gifer.com/origin/92/9254531a775dbeaafd633b0775071fee.gif" alt="#">
+        <img *ngIf="location.terrain === 'City'" src="https://c.tenor.com/asJFBWDay04AAAAd/anime-aesthetic.gif" alt="#">
+        <img *ngIf="location.terrain === 'Ocean'" src="https://i.pinimg.com/originals/82/fd/76/82fd7692b2416909f3a0e4fcf8e1229f.gif" alt="#">
+        <img *ngIf="location.terrain === 'TODO'" src="https://c.tenor.com/SUJIMerR9MUAAAAC/unknown-glitch.gif" alt="#">
+        <h4>{{location.name}}</h4>
+    </li>
+</ul>

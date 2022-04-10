@@ -1,0 +1,12 @@
+.vehicleItem {
+    width: 900px;
+    min-width: 350px;
+    margin: 25px;
+}
+
+img {
+    width: 100%;
+}
+h2 {
+    margin-bottom: 0;
+}

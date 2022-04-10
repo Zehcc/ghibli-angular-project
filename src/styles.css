@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A8C544;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png"); 
+    font-family: 'Ubuntu Mono', monospace;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 25px;
+}
+
+p {
+    color: #5E5547;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    color: #4E4438;
+}
