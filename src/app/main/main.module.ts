@@ -7,11 +7,12 @@ import { LocationsPageComponent } from './locations-page/locations-page.componen
 import { VehiclesPageComponent } from './vehicles-page/vehicles-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FilmComponent } from './film/film.component';
+import { PersonComponent } from './person/person.component';
 
 
 
 @NgModule({
-  declarations: [MainComponent, FilmsPageComponent, PeoplePageComponent, LocationsPageComponent, VehiclesPageComponent, HomePageComponent, FilmComponent],
+  declarations: [MainComponent, FilmsPageComponent, PeoplePageComponent, LocationsPageComponent, VehiclesPageComponent, HomePageComponent, FilmComponent, PersonComponent],
   imports: [
     CommonModule
   ], 
