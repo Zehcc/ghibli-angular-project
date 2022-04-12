@@ -5,8 +5,8 @@ import { PeoplePageComponent } from './pages/people-page/people-page.component';
 import { LocationsPageComponent } from './pages/locations-page/locations-page.component';
 import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { FilmComponent } from './film/film.component';
-import { PersonComponent } from './person/person.component';
+import { FilmComponent } from './single-components/film/film.component';
+import { PersonComponent } from './single-components/person/person.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { DetailedFilmComponent } from './pages/detailed-film/detailed-film.component';
 
@@ -20,7 +20,8 @@ import { DetailedFilmComponent } from './pages/detailed-film/detailed-film.compo
     VehiclesPageComponent, 
     HomePageComponent, 
     FilmComponent, 
-    PersonComponent, DetailedFilmComponent,
+    PersonComponent, 
+    DetailedFilmComponent,
   ],
   imports: [
     CommonModule,

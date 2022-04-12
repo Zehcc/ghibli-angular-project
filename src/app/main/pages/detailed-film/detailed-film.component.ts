@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Films } from '../../interfaces/films.inferface';
 
 @Component({
   selector: 'app-detailed-film',
@@ -9,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailedFilmComponent implements OnInit {
   
-  film!: any;
+  film!: Films;
   constructor(
     private activeRoute: ActivatedRoute,
     private http: HttpClient
@@ -18,7 +19,7 @@ export class DetailedFilmComponent implements OnInit {
   ngOnInit(): void {
     this.activeRoute.params.subscribe(params => {
       const {id} = params;
-      this.http.get(`https://ghibliapi.herokuapp.com/films/${id}`)
+      this.http.get<Films>(`https://ghibliapi.herokuapp.com/films/${id}`)
       .subscribe(response => {
         this.film = response;
         console.log(this.film)

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Locations } from '../../interfaces/locations.interface';
 
 @Component({
   selector: 'app-locations-page',
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsPageComponent implements OnInit {
 
-  locations: any [] = [];
+  locations: Locations [] = [];
 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('https://ghibliapi.herokuapp.com/locations')
-    .subscribe((response:any)=> {
+    this.http.get<Locations []>('https://ghibliapi.herokuapp.com/locations')
+    .subscribe((response)=> {
       this.locations = response;
       console.log(this.locations)
     })

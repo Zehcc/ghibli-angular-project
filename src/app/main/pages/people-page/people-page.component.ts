@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { People } from '../../interfaces/people.interface';
 
 @Component({
   selector: 'app-people-page',
@@ -8,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeoplePageComponent implements OnInit {
 
-  people: any [] = [];
+  people: People [] = [];
 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('https://ghibliapi.herokuapp.com/people')
-    .subscribe((response:any)=> {
+    this.http.get<People []>('https://ghibliapi.herokuapp.com/people')
+    .subscribe((response)=> {
       this.people = response;
       console.log(this.people)
     })
