@@ -17,7 +17,6 @@ export class PeoplePageComponent implements OnInit {
     this.http.get<People []>('https://ghibliapi.herokuapp.com/people')
     .subscribe((response)=> {
       this.people = response;
-      console.log(this.people)
     })
   }
 

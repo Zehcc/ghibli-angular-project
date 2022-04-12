@@ -17,7 +17,6 @@ export class VehiclesPageComponent implements OnInit {
     this.http.get<Vehicles []>('https://ghibliapi.herokuapp.com/vehicles')
     .subscribe((response)=> {
       this.vehicles = response;
-      console.log(this.vehicles)
     })
   }
 

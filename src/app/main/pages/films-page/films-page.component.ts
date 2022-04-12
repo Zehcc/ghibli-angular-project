@@ -18,7 +18,6 @@ export class FilmsPageComponent implements OnInit {
     this.http.get<Films []>('https://ghibliapi.herokuapp.com/films')
     .subscribe((response)=> {
       this.films = response;
-      console.log(this.films)
     })
     
   }

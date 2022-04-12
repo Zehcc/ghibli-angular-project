@@ -22,7 +22,6 @@ export class DetailedFilmComponent implements OnInit {
       this.http.get<Films>(`https://ghibliapi.herokuapp.com/films/${id}`)
       .subscribe(response => {
         this.film = response;
-        console.log(this.film)
       })
     })
   }

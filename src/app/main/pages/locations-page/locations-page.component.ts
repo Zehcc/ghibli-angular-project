@@ -17,7 +17,6 @@ export class LocationsPageComponent implements OnInit {
     this.http.get<Locations []>('https://ghibliapi.herokuapp.com/locations')
     .subscribe((response)=> {
       this.locations = response;
-      console.log(this.locations)
     })
   }
 
