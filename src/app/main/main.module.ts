@@ -9,6 +9,8 @@ import { FilmComponent } from './single-components/film/film.component';
 import { PersonComponent } from './single-components/person/person.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { DetailedFilmComponent } from './pages/detailed-film/detailed-film.component';
+import { LocationComponent } from './single-components/location/location.component';
+import { VehicleComponent } from './single-components/vehicle/vehicle.component';
 
 
 
@@ -21,7 +23,7 @@ import { DetailedFilmComponent } from './pages/detailed-film/detailed-film.compo
     HomePageComponent, 
     FilmComponent, 
     PersonComponent, 
-    DetailedFilmComponent,
+    DetailedFilmComponent, LocationComponent, VehicleComponent,
   ],
   imports: [
     CommonModule,
