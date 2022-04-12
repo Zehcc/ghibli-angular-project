@@ -1,0 +1,9 @@
+<div class="film" *ngIf="film">
+    <div class="filmImgContainer">
+        <img routerLink="/detailedFilm/{{film.id}}" class="filmImg" [src]="film.movie_banner" alt="film.title">
+    </div>
+    <div class="filmTxt">
+        <h4>{{film.title}} ({{film.original_title}})</h4>
+        <p>{{film.description}}</p>
+    </div>
+</div>

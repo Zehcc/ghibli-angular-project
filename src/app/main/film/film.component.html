@@ -1,5 +1,5 @@
 <div class="filmImgContainer">
-    <img class="filmImg" [src]="film.image" alt="film.title">
+    <img routerLink="/detailedFilm/{{film.id}}" class="filmImg" [src]="film.image" alt="film.title">
 </div>
 <div class="filmTxt">
     <h4>Título</h4>

@@ -8,6 +8,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FilmComponent } from './film/film.component';
 import { PersonComponent } from './person/person.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { DetailedFilmComponent } from './pages/detailed-film/detailed-film.component';
 
 
 
@@ -19,7 +20,7 @@ import { AppRoutingModule } from '../app-routing.module';
     VehiclesPageComponent, 
     HomePageComponent, 
     FilmComponent, 
-    PersonComponent,
+    PersonComponent, DetailedFilmComponent,
   ],
   imports: [
     CommonModule,
