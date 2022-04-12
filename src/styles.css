@@ -6,6 +6,7 @@ body {
     background-color: #A8C544;
     background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png"); 
     font-family: 'Ubuntu Mono', monospace;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;

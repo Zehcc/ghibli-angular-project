@@ -23,7 +23,9 @@ import { VehicleComponent } from './single-components/vehicle/vehicle.component'
     HomePageComponent, 
     FilmComponent, 
     PersonComponent, 
-    DetailedFilmComponent, LocationComponent, VehicleComponent,
+    DetailedFilmComponent, 
+    LocationComponent,
+    VehicleComponent
   ],
   imports: [
     CommonModule,
